@@ -1,0 +1,94 @@
+/* ── Card / Search ── */
+.cm-card {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #e8ecf0;
+  overflow: hidden;
+}
+
+.cm-search-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 20px;
+  border-bottom: 1px solid #e8ecf0;
+}
+
+.cm-search-icon {
+  font-size: 16px;
+  color: #9ca3af;
+}
+
+.cm-search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #374151;
+  background-color: transparent;
+}
+
+/* ── Table ── */
+.cm-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cm-thead {
+  background-color: #f9fafb;
+}
+
+.cm-th {
+  padding: 12px 20px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+  border-bottom: 1px solid #e8ecf0;
+}
+
+.cm-th-right {
+  text-align: right;
+}
+
+.cm-tr-even {
+  background-color: #fff;
+}
+
+.cm-tr-odd {
+  background-color: #fafbfc;
+}
+
+.cm-td {
+  padding: 14px 20px;
+  font-size: 14px;
+  color: #374151;
+  border-bottom: 1px solid #f0f2f5;
+}
+
+.cm-td-muted {
+  color: #6b7280;
+}
+
+.cm-td-right {
+  text-align: right;
+}
+
+.cm-edit-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 6px;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.cm-del-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px;
+  border-radius: 4px;
+}

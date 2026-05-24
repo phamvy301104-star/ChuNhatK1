@@ -31,6 +31,12 @@ const navSections: { title?: string; items: NavItem[] }[] = [
       { label: "Báo cáo", icon: "" },
     ],
   },
+  {
+    title: "CÔNG CỤ",
+    items: [
+      { label: "Task Board", icon: "📋" },
+    ],
+  },
 ];
 
 type SidebarProps = {

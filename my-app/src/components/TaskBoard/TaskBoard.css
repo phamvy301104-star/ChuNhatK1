@@ -1,0 +1,139 @@
+.task-board {
+  padding: 2rem;
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+.board-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #333;
+  text-align: center;
+}
+
+.columns-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.task-column {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.column-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+.column-content {
+  flex: 1;
+  padding: 1rem;
+  min-height: 400px;
+  overflow-y: auto;
+  background: #fafafa;
+}
+
+.empty-message {
+  text-align: center;
+  color: #999;
+  padding: 2rem 1rem;
+  font-style: italic;
+}
+
+.task-card {
+  background: white;
+  border-left: 4px solid #667eea;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  cursor: grab;
+  transition: all 0.2s ease;
+}
+
+.task-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.task-card:active {
+  cursor: grabbing;
+  background: #f9f9f9;
+}
+
+.task-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.task-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+  flex: 1;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #999;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+}
+
+.delete-btn:hover {
+  color: #e74c3c;
+}
+
+.task-status {
+  font-size: 0.75rem;
+  color: #667eea;
+  background: #f0f4ff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+/* Scrollbar styling */
+.column-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.column-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.column-content::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.column-content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
